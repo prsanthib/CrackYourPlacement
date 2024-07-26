@@ -69,10 +69,11 @@ class detectNegativeCycle
             graph[i] = new ArrayList<>();
         }
 
-        graph[1].add(new Edge(1,0,4));
-        graph[1].add(new Edge(1,2,-6));
-        graph[2].add(new Edge(2,3,5));
-        graph[3].add(new Edge(3,1,-2));
+        graph[0].add(new Edge(0, 1, 4));
+        graph[0].add(new Edge(0, 2, 5));
+        graph[1].add(new Edge(1, 2, 6));
+        graph[2].add(new Edge(2, 3, 5));
+        graph[3].add(new Edge(3, 1, 2));
 
         System.out.println(hasNegative(graph));
     }
