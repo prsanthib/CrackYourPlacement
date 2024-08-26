@@ -25,9 +25,11 @@ class Solution {
             currMax = Math.max(n , n*currMax);
             currMin = Math.min(n , n*currMin);
 
-            maxProd = Math.max(maxProd,currMax);
+             maxProd = Math.max(maxProd,currMax);
         }
 
         return maxProd;
     }
 }
+
+//this is changed
